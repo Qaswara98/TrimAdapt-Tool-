@@ -10,7 +10,7 @@ Remember, this documentation is here to help you. Whether you're a first-time us
 # INTRODUCTION
 The TrimAdapt tool, redesigned and re-implemented to be user-friendly, is a powerful tool for the preprocessing of Next-Generation Sequencing (NGS) data. It efficiently trims adapter sequences from both single-end and paired-end FASTQ files, a common requirement in NGS data preprocessing.
 
-TrimAdapt, similar to Trimmomatic, utilizes a command-line interface for trimming adapters from single-end FASTQ files in sequencing data. It is implemented using Python, ensuring error-free operation and enhanced accuracy of adapter identification. The tool is capable of handling paired-end FASTQ files, broadening its applicability across various sequencing data scenarios.
+TrimAdapt, similar to Trimmomatic, utilizes a command-line interface for trimming adapters from single-end and paired-end FASTQ files in sequencing data. It is implemented using Python, ensuring error-free operation and enhanced accuracy of adapter identification.
 
 The precision of adapter detection has been improved by refining the detection algorithms. This enhancement increases the tool’s efficiency and reliability, ensuring accurate identification and removal of adapters in complex data sets.
 
@@ -95,7 +95,7 @@ python TrimAdapt.py --data_type paired --input_file1 sample_R1.fastq --input_fil
 ## Output
 The script generates trimmed FASTQ files as specified in the `--output_file` argument(s). If plotting is enabled and matplotlib is installed, it also generates a bar plot and pie chart summarizing the trimming results.
 
-### Pulling the Docker Image
+## Pulling the Docker Image
 Before running the container, you will need to pull it from the Docker registry. Use the following command to pull the TrimAdapt Docker image:
 
 ```sh
